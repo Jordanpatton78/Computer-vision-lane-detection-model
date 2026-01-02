@@ -23,12 +23,19 @@ I implemented three strategies:
 * **Parameters:** ~41 million, pre-trained on COCO.
 * **Optimizer:** SGD with a learning rate scheduler.
 
-> **Left:** Small-data model training and validation error. **Right:** Auto-labeled training and validation error.
+![Small data training](images/small_data_train_curve.png)
+![Large data training](images/large_data_train_curve.png)
+
+> **First:** Small-data model training and validation error. **Second:** Auto-labeled training and validation error.
 
 ## Results and Analysis
 **Performance:** Both models achieved similar results in terms of MSE:
 * **Bounding Box Regression Error:** ~0.5 (training), ~0.6 (validation)
 * **Overfitting:** Validation error remained stable, indicating no overfitting.
+
+![Small Data Results](images/obj_detect_small_data.png)
+![Canny and Hough Results](images/obj_detect_canny_hough.png)
+![Large Data Results](images/obj_detect_large_data.png)
 
 > **Left:** Small-data model results. **Middle:** Non-ML Canny and Hough algorithm results. **Right:** Auto-labeled model results.
 
