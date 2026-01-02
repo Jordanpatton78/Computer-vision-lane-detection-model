@@ -37,7 +37,7 @@ I implemented three strategies:
 ![Canny and Hough Results](images/obj_detect_canny_hough.png)
 ![Large Data Results](images/obj_detect_large_data.png)
 
-> **Left:** Small-data model results. **Middle:** Non-ML Canny and Hough algorithm results. **Right:** Auto-labeled model results.
+> **First:** Small-data model results. **Second:** Non-ML Canny and Hough algorithm results. **Third:** Auto-labeled model results.
 
 Despite expanding the dataset, the second model only slightly outperformed the first due to label quality issues from automated labeling. Misidentified lanes likely hindered its performance. Hardware limitations also constrained the second model’s training time.
 
